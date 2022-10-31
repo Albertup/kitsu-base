@@ -1,0 +1,50 @@
+<div class="c-container">
+  <section>
+    <h2>Animes populares esta semana</h2>
+    <div class="c-image__container">
+        <div  *ngFor="let popular of popularesx">
+          <img src="{{popular.attributes.posterImage.small}}" alt="">
+        </div>
+    </div>
+
+
+    <h2>Animes más populares en emisión</h2>
+    <div class="c-image__container">
+        <div  *ngFor="let emision of emisionesx">
+          <img src="{{emision.attributes.posterImage.small}}" alt="">
+        </div>
+    </div>
+
+    <h2>Animes más esperados</h2>
+    <div class="c-image__container">
+        <div  *ngFor="let esperado of esperadosx">
+          <img src="{{esperado.attributes.posterImage.small}}" alt="">
+        </div>
+    </div>
+
+    <h2>Animes mejor evaluados</h2>
+    <div class="c-image__container">
+        <div  *ngFor="let evaluado of evaluadosx">
+          <img src="{{evaluado.attributes.posterImage.small}}" alt="">
+        </div>
+    </div>
+
+    <h2>Animes mejor evaluados</h2>
+    <div class="c-image__container">
+        <div  *ngFor="let masPopu of masPopusx">
+          <img src="{{masPopu.attributes.posterImage.small}}" alt="">
+        </div>
+    </div>
+  </section>
+  <aside>
+    <h2>Categorias</h2>
+    <div class="c-image__container">
+      <div  >
+        <ul *ngFor="let categoria of categoriasx">
+          <li><p>{{categoria.attributes.title}}</p></li>
+        </ul>
+
+      </div>
+  </div>
+  </aside>
+</div>
