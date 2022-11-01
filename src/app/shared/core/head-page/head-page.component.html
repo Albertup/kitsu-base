@@ -1,1 +1,27 @@
-<p>head-page works!</p>
+<div class="c-container">
+  <div class="c-container--menu">
+      <div class="c-container--menu__left">
+        <div class="c-logo">
+          <a routerLink="/" routerLinkActive="router-link-active" ><img src="./../../../../assets/img/kitsu-logo.png" alt=""></a>
+        </div>
+        <div class="dropdown">
+          <button>Navegar<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <div class="dropdown-content">
+            <a routerLink="/anime" routerLinkActive="router-link-active" >Animes</a>
+            <a >Mangas</a>
+          </div>
+        </div>
+        <div class="c-container--menu__rest">
+          <p>Grupos</p>
+          <p>Comentarios<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+        </div>
+      </div>
+      <div class="c-container--menu__right">
+        <input type="text" placeholder="Buscar en Kitsu">
+        <p>Conectarse</p>
+        <p>Registrarse</p>
+      </div>
+  </div>
+</div>
+
+

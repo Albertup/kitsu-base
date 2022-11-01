@@ -1,3 +1,4 @@
+
 import { ServiceService } from './../../services/service.service';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./global-component.component.scss']
 })
 export class GlobalComponentComponent implements OnInit {
-  home: any = [];
+  @Input() gallery: any = [];
   popularesx: any = [];
   emisionesx: any = [];
   esperadosx: any = [];
@@ -17,6 +18,8 @@ export class GlobalComponentComponent implements OnInit {
   constructor(private popularServices: ServiceService) { }
 
   ngOnInit(): void {
+
+
     this.popularServices.getPopular().
   subscribe((res:any) =>{
   this.popularesx = res.data;

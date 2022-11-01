@@ -1,50 +1,95 @@
 <div class="c-container">
-  <section>
-    <h2>Animes populares esta semana</h2>
-    <div class="c-image__container">
-        <div  *ngFor="let popular of popularesx">
-          <img src="{{popular.attributes.posterImage.small}}" alt="">
-        </div>
-    </div>
-
-
-    <h2>Animes más populares en emisión</h2>
-    <div class="c-image__container">
-        <div  *ngFor="let emision of emisionesx">
-          <img src="{{emision.attributes.posterImage.small}}" alt="">
-        </div>
-    </div>
-
-    <h2>Animes más esperados</h2>
-    <div class="c-image__container">
-        <div  *ngFor="let esperado of esperadosx">
-          <img src="{{esperado.attributes.posterImage.small}}" alt="">
-        </div>
-    </div>
-
-    <h2>Animes mejor evaluados</h2>
-    <div class="c-image__container">
-        <div  *ngFor="let evaluado of evaluadosx">
-          <img src="{{evaluado.attributes.posterImage.small}}" alt="">
-        </div>
-    </div>
-
-    <h2>Animes mejor evaluados</h2>
-    <div class="c-image__container">
-        <div  *ngFor="let masPopu of masPopusx">
-          <img src="{{masPopu.attributes.posterImage.small}}" alt="">
-        </div>
-    </div>
-  </section>
-  <aside>
-    <h2>Categorias</h2>
-    <div class="c-image__container">
-      <div  >
-        <ul *ngFor="let categoria of categoriasx">
-          <li><p>{{categoria.attributes.title}}</p></li>
-        </ul>
-
+  <div class="c-container--box">
+    <section>
+      <div class="c-main">
+        <h1>Explorar Anime</h1>
+        <form class="nosubmit">
+          <input class="nosubmit" type="search" placeholder="¿Qué buscas?...">
+        </form>
+        <small>O realiza una busqueda Avanzada</small>
       </div>
+
+
+      <h2>Animes populares esta semana</h2>
+      <div class="c-image__container">
+          <div class="wrapper" *ngFor="let popular of popularesx">
+              <div class="card">
+                  <img src="{{popular.attributes.posterImage.medium}}" alt="">
+                <div class="info">
+                  <button>Añadir a Biblioteca</button>
+                </div>
+              </div>
+          </div>
+          <p>Ver mas</p>
+        </div>
+
+      <h2>Animes más populares en emisión</h2>
+      <div class="c-image__container">
+          <div class="wrapper" *ngFor="let emision of emisionesx">
+            <div class="card">
+            <img src="{{emision.attributes.posterImage.medium}}" alt="">
+            <div class="info">
+              <button>Añadir a Biblioteca</button>
+            </div>
+          </div>
+        </div>
+            <p>Ver mas</p>
+      </div>
+
+      <h2>Animes más esperados</h2>
+      <div class="c-image__container">
+
+          <div class="wrapper" *ngFor="let esperado of esperadosx">
+            <div class="card">
+            <img src="{{esperado.attributes.posterImage.medium}}" alt="">
+            <div class="info">
+              <button>Añadir a Biblioteca</button>
+            </div>
+          </div>
+        </div>
+          <p>Ver mas</p>
+      </div>
+
+      <h2>Animes mejor evaluados</h2>
+      <div class="c-image__container">
+
+          <div class="wrapper" *ngFor="let evaluado of evaluadosx">
+            <div class="card">
+            <img src="{{evaluado.attributes.posterImage.medium}}" alt="">
+            <div class="info">
+              <button>Añadir a Biblioteca</button>
+            </div>
+          </div>
+        </div>
+            <p>Ver mas</p>
+      </div>
+
+      <h2>Animes mejor evaluados</h2>
+      <div class="c-image__container">
+
+          <div class="wrapper" *ngFor="let masPopu of masPopusx">
+            <div class="card">
+            <img src="{{masPopu.attributes.posterImage.medium}}" alt="">
+            <div class="info">
+              <button>Añadir a Biblioteca</button>
+            </div>
+          </div>
+        </div>
+            <p>Ver mas</p>
+      </div>
+
+    </section>
+    <aside>
+
+      <div class="c-category__container">
+        <h2>Categorías</h2>
+        <div class="c-category__content" >
+          <ul *ngFor="let categoria of categoriasx">
+            <li><p>{{categoria.attributes.title}}</p></li>
+          </ul>
+        </div>
+        <span>Más Categorías</span>
+    </div>
+    </aside>
   </div>
-  </aside>
 </div>

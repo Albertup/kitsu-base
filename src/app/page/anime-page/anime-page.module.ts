@@ -1,3 +1,4 @@
+import { GalleryComponentComponent } from './../../shared/component/gallery-component/gallery-component.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +8,8 @@ import { AnimePageComponent } from './anime-page.component';
 
 @NgModule({
   declarations: [
-    AnimePageComponent
+    AnimePageComponent,
+    GalleryComponentComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,128 @@
+.c-container {
+  // background-color: #4d3e4c;
+  background-color: #3f2f3f;
+  display: flex;
+  height: 38px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.c-container li a {
+  display: flex;
+  color: #f7f7f7;
+}
+.c-container ul li {
+  display: flex;
+  color: #f7f7f7;
+}
+.c-container img {
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+.c-container--menu {
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  justify-content: space-around;
+  &__left {
+    display: flex;
+  }
+  &__right {
+    display: flex;
+  }
+}
+.c-logo {
+  display: flex;
+  justify-content: center;
+}
+.dropdown {
+  display: inline-block;
+  margin-top: 5px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  color: #f7f7f7;
+  font-family: 'Asap Condensed', 'Merriweather Sans', sans-serif;
+  box-sizing: border-box;
+  font-style: normal;
+  font-size: 14.5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #464646;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+.dropdown-content a:hover {
+  color: #464646;
+  background-color: #f7f7f7;
+}
+.fa-caret-down {
+  margin-left: 6px;
+}
+.c-container--menu__rest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-container--menu__rest p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 14.5px;
+  color: grey;
+  cursor: pointer;
+  &:hover{
+    color: #f7f7f7;
+  }
+}
+.c-container--menu__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 14.5px;
+  color: grey;
+}
+.c-container--menu__right input {
+  font-size: 12.5px;
+  color: grey;
+  background-color: #5a465a;
+  width: 150px;
+  height: 24px;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.c-container--menu__right p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 14.5px;
+  color: grey;
+  cursor: pointer;
+  &:hover{
+    color: #f7f7f7;
+  }
+}
